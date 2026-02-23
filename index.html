@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>כרטיס ביקור דיגיטלי</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            margin-bottom: 15px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #d8e2dc;
+            margin-top: 10px;
+        }
+
+        h1 {
+            margin: 10px 0 5px;
+            font-size: 28px;
+            color: #344e41;
+        }
+
+        h2 {
+            margin: 0 0 15px 0;
+            font-weight: normal;
+            color: #588157;
+        }
+
+        section {
+            background-color: #ffffff;
+            margin-top: 30px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            background-color: #d8e2dc;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 18px;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .portfolio img {
+            width: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio img:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-button {
+            display: inline-block;
+            background-color: #588157;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #3a5a40;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <img src="logo.png" alt="לוגו העסק" class="logo">
+        <h1>שם העסק שלך</h1>
+        <h2>השם שלך</h2>
+        <img src="profile.jpg" alt="תמונה אישית" class="profile-pic">
+
+        <!-- כפתור וואטסאפ -->
+        <a class="contact-button" 
+           href="https://wa.me/972526979535?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%AA%D7%99%D7%A7%20%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%95%D7%AA%20%D7%A9%D7%9C%D7%9A%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%95%D7%97%D7%97."
+           target="_blank">
+            שלחו לי הודעה בוואטסאפ
+        </a>
+    </header>
+
+    <section class="about">
+        <h2>קצת עליי</h2>
+        <p>
+            אני מתמחה בעולם הדיגיטל עם ניסיון עשיר בניהול לקוחות, קמפיינים ועיצוב גרפי.
+            אני יוצרת נוכחות דיגיטלית חזקה ומדויקת לעסקים שרוצים לבלוט.
+        </p>
+    </section>
+
+    <section class="services">
+        <h2>מה אני עושה</h2>
+        <ul>
+            <li>ניהול סושיאל</li>
+            <li>ניהול קמפיינים</li>
+            <li>מעצבת גרפית</li>
+            <li>מנהלת תיקי לקוחות</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>תיק עבודות</h2>
+        <div class="portfolio">
+            <!-- 20 תמונות -->
+            <img src="portfolio1.jpg" alt="">
+            <img src="portfolio2.jpg" alt="">
+            <img src="portfolio3.jpg" alt="">
+            <img src="portfolio4.jpg" alt="">
+            <img src="portfolio5.jpg" alt="">
+            <img src="portfolio6.jpg" alt="">
+            <img src="portfolio7.jpg" alt="">
+            <img src="portfolio8.jpg" alt="">
+            <img src="portfolio9.jpg" alt="">
+            <img src="portfolio10.jpg" alt="">
+            <img src="portfolio11.jpg" alt="">
+            <img src="portfolio12.jpg" alt="">
+            <img src="portfolio13.jpg" alt="">
+            <img src="portfolio14.jpg" alt="">
+            <img src="portfolio15.jpg" alt="">
+            <img src="portfolio16.jpg" alt="">
+            <img src="portfolio17.jpg" alt="">
+            <img src="portfolio18.jpg" alt="">
+            <img src="portfolio19.jpg" alt="">
+            <img src="portfolio20.jpg" alt="">
+        </div>
+    </section>
+
+    <footer>
+        © 2026 כל הזכויות שמורות
+    </footer>
+
+</div>
+
+<!-- כפתור צף -->
+<a class="whatsapp-float" 
+   href="https://wa.me/972526979535?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%AA%D7%99%D7%A7%20%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%95%D7%AA%20%D7%A9%D7%9C%D7%9A%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%95%D7%97%D7%97."
+   target="_blank">
+   💬
+</a>
+
+</body>
+</html>
