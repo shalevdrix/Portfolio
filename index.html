@@ -1,221 +1,361 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>דיגיטל | שלו דריקס</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>שלו דריקס | קמפיינים, עיצוב גרפי ו-AI</title>
+<meta name="description" content="שלו דריקס, קמפיינרית ומעצבת גרפית. פרסום ממומן במטא, בגוגל, בטיקטוק וב-ChatGPT, אתרים ודפי נחיתה, גרפיקה, סושיאל וסרטוני AI. תוצאות קמפיינים ותיק עבודות.">
+<meta property="og:title" content="שלו דריקס | קמפיינים, עיצוב גרפי ו-AI">
+<meta property="og:description" content="פרסום ממומן במטא, בגוגל, בטיקטוק וב-ChatGPT. תוצאות קמפיינים ותיק עבודות.">
+<meta property="og:image" content="https://shalevdrix.github.io/Portfolio/assets/shalev-2.webp">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f6f1e7">
+<script>try{var m=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.dataset.theme=m}catch(e){}</script>
+<link rel="icon" href="assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600&family=Frank+Ruhl+Libre:wght@400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --paper:#fbf8f1; --sand:#ebdfcb; --beige:#dcc9ab; --taupe:#a8957d;
+  --gold:#b3925a; --olive:#4a4f38; --ink:#4a3d2c; --head:#3a2f22; --muted:#6f6150;
+  --line:rgba(179,146,90,.34); --nav-bg:rgba(246,241,231,.86); --hero-top:#fbf8f1; --on-fill:#fbf8f1; --logo-bg:#fff;
+  --serif:"Frank Ruhl Libre","Playfair Display",Georgia,serif;
+  --latin:"Playfair Display","Bellefair",Georgia,serif;
+  --sans:"Assistant","Helvetica Neue",Arial,sans-serif;
+}
+:root[data-theme=dark]{
+  --bg:#1b1915; --paper:#221f1a; --sand:#3a332a; --beige:#5a4e3e; --taupe:#a39480;
+  --gold:#cdae72; --olive:#cdae72; --ink:#e6dccb; --head:#f4ecdd; --muted:#b5a892;
+  --line:rgba(205,174,114,.26); --nav-bg:rgba(27,25,21,.86); --hero-top:#221f1a; --on-fill:#1b1915; --logo-bg:#221f1a;
+}
+:root[data-theme=dark] .light{opacity:.07}
+:root[data-theme=dark] .shadow{color:#000;opacity:.35}
+:root[data-theme=dark] .logos img,:root[data-theme=dark] .logos div:hover img{filter:grayscale(1) invert(1);mix-blend-mode:screen;opacity:.85}
+:root[data-theme=dark] footer img{filter:invert(1) hue-rotate(180deg);mix-blend-mode:screen}
+:root[data-theme=dark] body::after{display:none}
+.mode{background:none;border:1px solid var(--line);width:40px;height:40px;border-radius:50%;display:grid;place-items:center;cursor:pointer;color:var(--head);transition:.3s;flex:none}
+.mode:hover{border-color:var(--gold);color:var(--gold)}
+.mode svg{width:18px;height:18px}
+.mode .sun{display:none}
+:root[data-theme=dark] .mode .sun{display:block}
+:root[data-theme=dark] .mode .moon{display:none}
+.navend{display:flex;align-items:center;gap:26px}
+body,.nav,.svc,.hero{transition:background-color .5s ease,color .5s ease}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:18px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.055;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+p{margin:0}
+.wrap{width:min(1120px,100% - 56px);margin-inline:auto}
+h1,h2,h3{text-wrap:balance;font-family:var(--serif);font-weight:500;color:var(--head);margin:0;line-height:1.12}
+h2{font-size:clamp(38px,5vw,62px)}
+h3{font-size:28px}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.cur{font-style:normal;font-family:var(--sans);font-weight:400;font-size:.46em;margin-right:.12em;vertical-align:.5em;color:var(--taupe)}
+td .cur{font-size:.8em;vertical-align:0}
+.en{font-family:var(--latin);font-style:italic;font-size:17px;letter-spacing:.2em;color:var(--gold);text-transform:none;display:block;margin-bottom:16px}
+.lede{font-size:19px;color:var(--muted);max-width:54ch}
+section{padding:clamp(64px,8vw,112px) 0;position:relative}
+.head{text-align:center;margin-bottom:clamp(36px,4.5vw,56px)}
+.head .lede{margin:18px auto 0}
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            color: #4a4a4a;
-            line-height: 1.7;
+.btn{display:inline-block;font-family:var(--sans);font-weight:500;font-size:16px;letter-spacing:.08em;text-decoration:none;padding:15px 34px;border:1px solid var(--gold);color:var(--head);background:transparent;transition:.4s ease;cursor:pointer}
+.btn:hover{background:var(--gold);color:var(--on-fill)}
+.btn.fill{background:var(--olive);border-color:var(--olive);color:var(--on-fill)}
+.btn.fill:hover{background:var(--gold);border-color:var(--gold)}
 
-            /* הרקע החדש */
-            background-image: url('background.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
+.full{min-height:100svh;display:flex;align-items:center}
+.full>.wrap{flex:none}
+.stage{display:grid;text-align:center}
+.slide{grid-area:1/1;opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease;pointer-events:none}
+.slide.on{opacity:1;transform:none;pointer-events:auto}
+.slide .name{font-family:var(--latin);font-size:clamp(72px,13vw,168px);line-height:1;color:var(--head);direction:ltr}
+.slide .sub{font-size:16px;font-weight:500;letter-spacing:.1em;color:var(--gold);margin:14px 0 10px}
+.slide p{font-size:clamp(19px,2vw,23px);color:var(--muted);max-width:30ch;margin-inline:auto}
+.tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;margin-top:40px}
+.tabs button{font-family:var(--latin);font-size:18px;background:none;border:0;border-bottom:1px solid transparent;padding:4px 0;color:var(--taupe);cursor:pointer;transition:.3s}
+.tabs button[aria-pressed=true]{color:var(--head);border-color:var(--gold)}
+.also{text-align:center;margin-top:44px;font-size:16px;color:var(--muted);letter-spacing:.02em}
+.also.lg{font-size:clamp(18px,1.7vw,22px);font-weight:500;color:var(--ink);line-height:1.9}
+.bignum{text-align:center}
+.bignum b{display:block;font-family:var(--serif);font-weight:500;letter-spacing:-.02em;font-size:clamp(84px,12vw,150px);line-height:1;color:var(--head)}
+.bignum span{font-size:clamp(19px,2vw,24px);color:var(--muted)}
+.minis{display:flex;justify-content:center;margin-top:clamp(36px,5vw,60px);border-top:1px solid var(--line);padding-top:clamp(26px,3vw,36px)}
+.minis div{padding:0 clamp(18px,4vw,56px);text-align:center;border-inline-start:1px solid var(--line)}
+.minis div:first-child{border:0}
+.minis b{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(26px,3vw,38px);line-height:1.1;color:var(--head)}
+.minis span{font-size:15px;color:var(--muted)}
+.minis .ltr{font-size:inherit}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);counter-reset:s;max-width:960px;margin-inline:auto}
+.step{counter-increment:s;text-align:center;padding:0 26px;border-inline-start:1px solid var(--line)}
+.step:first-child{border:0}
+.step::before{content:"0" counter(s);font-family:var(--latin);font-style:italic;font-size:34px;color:var(--gold);display:block;margin-bottom:8px}
+.step h3{font-size:25px;margin-bottom:6px}
+.step p{font-size:17px;color:var(--muted);line-height:1.6}
+.fab{position:fixed;z-index:40;bottom:22px;left:22px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--olive);color:var(--on-fill);box-shadow:0 14px 30px -12px rgba(58,47,34,.6);transition:opacity .4s,transform .4s,background .3s}
+.fab:hover{background:var(--gold)}
+.fab svg{width:27px;height:27px}
+.fab.hide{opacity:0;transform:translateY(12px);pointer-events:none}
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:.4s ease;border-bottom:1px solid transparent}
+.nav.scrolled{background:var(--nav-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{text-decoration:none;font-family:var(--serif);font-size:25px;color:var(--head);letter-spacing:.02em}
+.nav ul{display:flex;gap:40px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-size:16.5px;font-weight:500;letter-spacing:.02em;color:var(--ink);transition:color .3s}
+.nav ul a:hover{color:var(--gold)}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;padding:10px}
+.burger span{display:block;height:1px;background:var(--head);margin:8px 0}
 
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+.hero{padding:clamp(120px,12vw,160px) 0 clamp(70px,8vw,110px);overflow:hidden;background:linear-gradient(180deg,var(--hero-top),var(--bg))}
+.light{position:absolute;inset:-10% -10% 0 -10%;pointer-events:none;background:repeating-linear-gradient(112deg,rgba(255,253,246,.9) 0 90px,transparent 90px 150px);filter:blur(22px);opacity:.75;-webkit-mask-image:radial-gradient(60% 70% at 30% 30%,#000,transparent 75%);mask-image:radial-gradient(60% 70% at 30% 30%,#000,transparent 75%)}
+.shadow{position:absolute;color:#6f5b3a;opacity:.13;filter:blur(7px);pointer-events:none}
+.shadow.a{width:620px;top:-40px;left:-120px;transform:rotate(-6deg)}
+.shadow.b{width:420px;bottom:-120px;right:-140px;transform:rotate(168deg);opacity:.08}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,7vw,110px);align-items:center}
+.hero h1{font-size:clamp(44px,5.5vw,78px);line-height:1.06;margin-bottom:26px;letter-spacing:-.005em}
+.hero h1 span{display:block;color:var(--gold)}
+.hero .lede{margin-bottom:36px}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:18px 34px}
+.portrait{position:relative;justify-self:center;width:min(390px,100%)}
+.arch{aspect-ratio:3/4;border-radius:999px 999px 0 0;overflow:hidden;background:var(--sand);box-shadow:0 50px 90px -50px rgba(74,61,44,.5)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;transform:scale(1.2);transform-origin:56% 24%}
+.portrait::before{content:"";position:absolute;inset:-18px -18px -18px -18px;border:1px solid var(--line);border-radius:999px 999px 0 0;pointer-events:none}
 
-        header {
-            background-color: #f3efe6; /* קרם */
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            text-align: center;
-        }
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line)}
 
-        .logo {
-            width: 110px;
-            margin-bottom: 15px;
-        }
+.about .wrap{max-width:820px;text-align:center}
+.about .big{font-family:var(--serif);font-size:clamp(28px,3.5vw,42px);line-height:1.35;color:var(--head);margin:8px 0 30px}
+.about .txt{color:var(--muted);max-width:60ch;margin-inline:auto}
 
-        .profile-pic {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #e6dfd2;
-            margin-top: 15px;
-        }
+.svc{background:var(--paper)}
+.ch .name{font-family:var(--latin);font-size:44px;color:var(--head);line-height:1.1;direction:ltr}
+.ch .sub{font-size:15px;font-weight:500;letter-spacing:.08em;color:var(--gold);margin:6px 0 14px}
+.ch .new{display:inline-block;font-family:var(--latin);font-style:italic;font-size:14px;color:var(--gold);border:1px solid var(--line);border-radius:99px;padding:0 12px;margin-inline-start:8px;vertical-align:middle;letter-spacing:.06em}
 
-        h1 {
-            margin: 10px 0 5px;
-            font-size: 30px;
-            color: #c2b59b; /* בז' */
-        }
+.case .kicker{font-size:14px;letter-spacing:.16em;color:var(--gold);margin-bottom:10px}
+.case .desc{color:var(--muted);font-size:17px;margin-bottom:26px;max-width:44ch}
+.proof{background:none;border:0;border-bottom:1px solid var(--gold);padding:0 0 4px;font-family:var(--sans);font-weight:300;font-size:15px;letter-spacing:.08em;color:var(--head);cursor:pointer}
+.proof:hover{color:var(--gold)}
 
-        h2 {
-            color: #c2b59b; /* בז' */
-            margin-bottom: 20px;
-        }
+.logos{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border:1px solid var(--line);background:var(--line);max-width:1000px;margin-inline:auto}
+.logos div{aspect-ratio:4/3;position:relative;min-width:0;background:var(--logo-bg)}
+.logos img{position:absolute;inset:14%;width:72%;height:72%;object-fit:contain;filter:grayscale(1);opacity:.8;transition:.5s}
+.logos div:hover img{filter:none;opacity:1}
 
-        section {
-            background-color: #f3efe6; /* קרם */
-            margin-top: 30px;
-            padding: 35px;
-            border-radius: 20px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
 
-        .role {
-            margin-bottom: 30px;
-        }
+.contact{text-align:center;overflow:hidden}
+.contact .shadow{width:520px;top:-60px;right:-120px;left:auto;transform:rotate(96deg) scaleX(-1)}
+.contact .wrap{position:relative}
+.contact h2{font-size:clamp(44px,7vw,92px);margin-bottom:22px}
+.contact .lede{margin:0 auto 44px}
+.contact .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:30px 0 34px;font-size:14px;color:var(--muted);text-align:center;letter-spacing:.04em}
+footer img{width:54px;margin:0 auto 12px;opacity:.9}
 
-        .role h3 {
-            margin-bottom: 10px;
-            color: #b7a88a;
-        }
 
-        .portfolio {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-        }
+.rv{opacity:0;transform:translateY(22px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 
-        .portfolio img {
-            width: 100%;
-            border-radius: 15px;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .portfolio img:hover {
-            transform: scale(1.05);
-        }
-
-        .contact-button {
-            display: inline-block;
-            background-color: #c2b59b; /* בז' */
-            color: white;
-            padding: 14px 28px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 17px;
-            margin-top: 20px;
-            transition: 0.3s ease;
-        }
-
-        .contact-button:hover {
-            background-color: #b7a88a;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #ffffff;
-            font-size: 14px;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                padding: 30px 20px;
-            }
-
-            .profile-pic {
-                width: 110px;
-                height: 110px;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-        }
-    </style>
+@media (max-width:900px){
+  .hero .wrap,.case{grid-template-columns:1fr}
+  .hero{text-align:center}
+  .hero .lede{margin-inline:auto}
+  .cta{justify-content:center}
+  .hero.full{align-items:flex-start}
+  .portrait{width:min(280px,70%);margin:26px 0 30px}
+  .shadow.a{width:420px;left:-140px}
+  .logos{grid-template-columns:repeat(3,1fr)}
+  .logos img{inset:10%;width:80%;height:80%}
+  .case .desc{margin-inline:auto}
+  .burger{display:block}
+  .steps{grid-template-columns:1fr;gap:34px}
+  .step{border:0;padding:0}
+  .tabs{gap:8px 22px}
+  .navend{gap:8px}
+  .nav ul{position:fixed;inset:78px 0 auto 0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:6px 28px 22px;display:none;text-align:center}
+  .nav.open ul{display:flex}
+  .nav.open{background:var(--bg)}
+  .nav ul a{display:block;padding:15px 0;border-bottom:1px solid var(--line);font-size:18px}
+}
+@media (max-width:560px){
+  body{font-size:17px}
+  .wrap{width:calc(100% - 40px)}
+  .hero h1{font-size:44px}
+}
+</style>
 </head>
-
 <body>
 
-<div class="container">
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">שלו דריקס</a>
+    <ul id="menu">
+            <li><a href="#services">שירותים</a></li>
+      <li><a href="#results">תוצאות</a></li>
+      <li><a href="#work">לקוחות</a></li>
+      <li><a href="#contact">צור קשר</a></li>
+    </ul>
+    <div class="navend">
+      <button class="mode" id="mode" aria-label="מצב לילה"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M20 14.500A8 8 0 0 1 9.500 4 8 8 0 1 0 20 14.500z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.500M12 19.500V22M2 12h2.500M19.500 12H22M4.900 4.900l1.800 1.800M17.300 17.300l1.800 1.800M4.900 19.100l1.800-1.800M17.300 6.700l1.800-1.800"/></svg></button>
+      <button class="burger" id="burger" aria-label="תפריט" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
 
-    <header>
-        <img src="logo.png" alt="לוגו" class="logo">
-        <h1>שלו דריקס</h1>
-        <p>אשת קריאייטיב ושיווק דיגיטלי</p>
+<main id="top">
 
-        <img src="profile.png" alt="תמונה אישית" class="profile-pic">
+<section class="hero full">
+  <div class="light"></div>
+  <div class="shadow a"><svg viewBox="0 0 520 420" aria-hidden="true"><g fill="currentColor"><path d="M505 20C400 70 220 190 20 410l-6-6C212 184 394 62 500 10z"/>
+<path d="M452 50c-10-34 8-58 42-62-2 34-14 54-42 62z"/><path d="M420 74c24-22 62-18 84 8-28 18-60 14-84-8z"/>
+<path d="M388 92c-18-32-6-66 24-84 10 34 2 64-24 84z"/><path d="M350 122c30-18 68-6 86 24-34 14-64 6-86-24z"/>
+<path d="M312 148c-22-30-18-68 8-90 18 30 14 64-8 90z"/><path d="M272 184c30-22 68-14 90 12-30 22-64 18-90-12z"/>
+<path d="M236 214c-26-26-28-64-6-90 22 26 24 62 6 90z"/><path d="M196 254c26-26 64-28 90-6-26 26-60 30-90 6z"/>
+<path d="M160 288c-28-22-36-60-18-90 26 22 34 60 18 90z"/><path d="M122 330c22-30 60-40 90-22-22 30-56 40-90 22z"/>
+<path d="M90 362c-30-18-42-54-28-86 28 18 40 54 28 86z"/><path d="M58 398c18-30 54-42 86-28-18 30-52 42-86 28z"/></g></svg></div>
+  <div class="shadow b"><svg viewBox="0 0 520 420" aria-hidden="true"><g fill="currentColor"><path d="M505 20C400 70 220 190 20 410l-6-6C212 184 394 62 500 10z"/>
+<path d="M452 50c-10-34 8-58 42-62-2 34-14 54-42 62z"/><path d="M420 74c24-22 62-18 84 8-28 18-60 14-84-8z"/>
+<path d="M388 92c-18-32-6-66 24-84 10 34 2 64-24 84z"/><path d="M350 122c30-18 68-6 86 24-34 14-64 6-86-24z"/>
+<path d="M312 148c-22-30-18-68 8-90 18 30 14 64-8 90z"/><path d="M272 184c30-22 68-14 90 12-30 22-64 18-90-12z"/>
+<path d="M236 214c-26-26-28-64-6-90 22 26 24 62 6 90z"/><path d="M196 254c26-26 64-28 90-6-26 26-60 30-90 6z"/>
+<path d="M160 288c-28-22-36-60-18-90 26 22 34 60 18 90z"/><path d="M122 330c22-30 60-40 90-22-22 30-56 40-90 22z"/>
+<path d="M90 362c-30-18-42-54-28-86 28 18 40 54 28 86z"/><path d="M58 398c18-30 54-42 86-28-18 30-52 42-86 28z"/></g></svg></div>
+  <div class="wrap">
+    <div>
+      <span class="en">Campaigns · Design · AI</span>
+      <h1>קמפיינים שמביאים לקוחות,<span>בעיצוב שעוצר את הגלילה.</span></h1>
+      <p class="lede">אני שלו דריקס, קמפיינרית ומעצבת גרפית. מנהלת פרסום ממומן במטא, בגוגל, בטיקטוק וב-ChatGPT, ויוצרת את הקריאייטיב בעצמי.</p>
+      <div class="cta">
+        <a class="btn fill" target="_blank" rel="noopener" href="https://wa.me/972526979535?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%AA%D7%99%D7%A7%20%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%95%D7%AA%20%D7%A9%D7%9C%D7%9A%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%95%D7%97%D7%97.">דברו איתי בוואטסאפ</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="arch"><img src="assets/shalev-2.webp" alt="שלו דריקס" width="1000" height="1333" fetchpriority="high"></div>
+    </div>
+  </div>
+</section>
 
-        <br>
-        <a class="contact-button" 
-           href="https://wa.me/972526979535?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%AA%D7%99%D7%A7%20%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%95%D7%AA%20%D7%A9%D7%9C%D7%9A%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%95%D7%97%D7%97."
-           target="_blank">
-            יצירת קשר בוואטסאפ
-        </a>
-    </header>
+<section class="svc full" id="services">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="en">Services</span>
+      <h2>השירותים שלנו</h2>
+    </div>
+    <div class="stage rv" id="stage">
+      <article class="slide on"><div class="name">Meta</div><div class="sub">לידים · הודעות לוואטסאפ · רימרקטינג</div><p>פייסבוק ואינסטגרם, עם קריאייטיב שעוצר את האגודל.</p></article>
+      <article class="slide"><div class="name">Google</div><div class="sub">חיפוש · יוטיוב · Performance Max</div><p>להופיע ראשונים בדיוק כשהלקוח מחפש אתכם.</p></article>
+      <article class="slide"><div class="name">TikTok</div><div class="sub">סרטונים קצרים · לידים · תנועה לאתר</div><p>סרטונים שמרגישים חלק מהפיד ומביאים פניות.</p></article>
+      <article class="slide"><div class="name">ChatGPT</div><div class="sub">מודעות בתוך השיחה</div><p>זירת הפרסום החדשה, לפני שהמתחרים מגיעים לשם.</p></article>
+    </div>
+    <div class="tabs" id="tabs" role="group" aria-label="פלטפורמות">
+      <button aria-pressed="true">Meta</button><button aria-pressed="false">Google</button><button aria-pressed="false">TikTok</button><button aria-pressed="false">ChatGPT</button>
+    </div>
+    <p class="also lg rv">ובנוסף: אתרים ודפי נחיתה · גרפיקה ומיתוג · סרטוני AI · ניהול סושיאל · אסטרטגיה ומדידה</p>
+  </div>
+</section>
 
-    <section>
-        <h2>קצת עליי</h2>
-        <p>
-            4 שנים בתחום השיווק. אשת קריאייטיב ושיווק דיגיטלי עם שילוב ייחודי של עיצוב, אסטרטגיה וניהול לקוחות.
-            בעלת ניסיון בהובלת מותגים משלב הרעיון ועד הביצוע, בניית קמפיינים ממירים, ניהול סושיאל ויצירת שפה ויזואלית מדויקת.
-            חשיבה עסקית לצד יצירתיות גבוהה, יכולת עבודה מול מספר ממשקים במקביל, יחסי אנוש מצוינים ומסירות לעבודה.
-        </p>
-    </section>
+<section class="full" id="results">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="en">Results</span>
+      <h2>תוצאות מקמפיינים אמיתיים</h2>
+    </div>
+    <div class="bignum rv"><b>824</b><span>לידים ללקוח אחד</span></div>
+    <div class="minis rv">
+      <div><b><span class="ltr"><i class="cur">₪</i>3.87</span></b><span>עלות לליד</span></div>
+      <div><b>746</b><span>שיחות עם לקוחות</span></div>
+      <div><b><span class="ltr"><i class="cur">₪</i>0.13</span></b><span>עלות לקליק</span></div>
+    </div>
+  </div>
+</section>
 
-    <section>
-        <h2>ניסיון מקצועי</h2>
+<section class="svc" id="work">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="en">Clients</span>
+      <h2>הלקוחות שלנו</h2>
+    </div>
+    <div class="logos rv">
+      <div><img src="assets/client-dg.webp" alt="CD Investment Group" width="480" height="360" loading="lazy"></div>
+      <div><img src="assets/client-big.webp" alt="BIG Fashion גלילות" width="480" height="360" loading="lazy"></div>
+      <div><img src="assets/client-angel.webp" alt="Angel Bridal" width="480" height="360" loading="lazy"></div>
+      <div><img src="assets/client-reon.webp" alt="Re-on" width="480" height="360" loading="lazy"></div>
+      <div><img src="assets/client-momentum.webp" alt="Momentum Media Group" width="480" height="360" loading="lazy"></div>
+      <div><img src="assets/client-master.webp" alt="Master Invest" width="480" height="360" loading="lazy"></div>
+      <div><img src="assets/client-paintech.webp" alt="PainTech" width="480" height="360" loading="lazy"></div>
+      <div><img src="assets/client-ss.webp" alt="SS Laser & Beauty" width="480" height="360" loading="lazy"></div>
+      <div><img src="assets/client-ishur.webp" alt="אישורי הגעה" width="480" height="360" loading="lazy"></div>
+      <div><img src="assets/client-elena.webp" alt="Elena Tomskiy" width="480" height="360" loading="lazy"></div>
+      <div><img src="assets/client-autoscale.webp" alt="AutoScale" width="480" height="360" loading="lazy"></div>
+      <div><img src="assets/client-cosmeti.webp" alt="קוס-מטי" width="480" height="360" loading="lazy"></div>
+    </div>
+    <p class="also rv">עובדים עם: נדל"ן · קוסמטיקה וקליניקות · אופנה · אירועים · עסקים מקומיים</p>
+  </div>
+</section>
 
-        <div class="role">
-            <h3>מעצבת גרפית</h3>
-            <p>מעצבת גרפית בעלת חשיבה קריאייטיבית וראייה שיווקית, עם ניסיון ביצירת שפות מיתוג, עיצוב חומרים לדיגיטל ולדפוס, התאמת מסרים לקהלי יעד שונים ושמירה על קו עיצובי אחיד ומדויק.</p>
-        </div>
+<section id="how">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="en">Process</span>
+      <h2>איך זה עובד</h2>
+    </div>
+    <div class="steps rv">
+      <div class="step"><h3>שיחת היכרות</h3><p>מדברים על העסק, על הלקוחות ועל המטרה.</p></div>
+      <div class="step"><h3>הצעה מסודרת</h3><p>תוכנית, תקציב מומלץ ומה בדיוק תקבלו.</p></div>
+      <div class="step"><h3>עולים לאוויר</h3><p>קריאייטיב, קמפיינים ודוח ברור על התוצאות.</p></div>
+    </div>
+  </div>
+</section>
 
-        <div class="role">
-            <h3>מנהלת סושיאל</h3>
-            <p>ניהול והובלה של עמודי סושיאל ברשתות החברתיות, כולל בניית אסטרטגיית תוכן, יצירת תכנים ויזואליים וטקסטואליים ומעקב אחר ביצועים.</p>
-        </div>
+<section class="contact full" id="contact">
+  <div class="shadow"><svg viewBox="0 0 520 420" aria-hidden="true"><g fill="currentColor"><path d="M505 20C400 70 220 190 20 410l-6-6C212 184 394 62 500 10z"/>
+<path d="M452 50c-10-34 8-58 42-62-2 34-14 54-42 62z"/><path d="M420 74c24-22 62-18 84 8-28 18-60 14-84-8z"/>
+<path d="M388 92c-18-32-6-66 24-84 10 34 2 64-24 84z"/><path d="M350 122c30-18 68-6 86 24-34 14-64 6-86-24z"/>
+<path d="M312 148c-22-30-18-68 8-90 18 30 14 64-8 90z"/><path d="M272 184c30-22 68-14 90 12-30 22-64 18-90-12z"/>
+<path d="M236 214c-26-26-28-64-6-90 22 26 24 62 6 90z"/><path d="M196 254c26-26 64-28 90-6-26 26-60 30-90 6z"/>
+<path d="M160 288c-28-22-36-60-18-90 26 22 34 60 18 90z"/><path d="M122 330c22-30 60-40 90-22-22 30-56 40-90 22z"/>
+<path d="M90 362c-30-18-42-54-28-86 28 18 40 54 28 86z"/><path d="M58 398c18-30 54-42 86-28-18 30-52 42-86 28z"/></g></svg></div>
+  <div class="wrap rv">
+    <span class="en">Let's talk</span>
+    <h2>בואו נעבוד יחד</h2>
+    <p class="lede">לקוחות חדשים ושיתופי פעולה עם מותגים, סוכנויות ויוצרים. כתבו לי כמה מילים ואחזור עם כיוון ראשוני.</p>
+    <div class="cta">
+      <a class="btn fill" target="_blank" rel="noopener" href="https://wa.me/972526979535?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%AA%D7%99%D7%A7%20%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%95%D7%AA%20%D7%A9%D7%9C%D7%9A%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%95%D7%97%D7%97.">הודעה בוואטסאפ</a>
+    </div>
+  </div>
+</section>
 
-        <div class="role">
-            <h3>קמפיינרית</h3>
-            <p>ניהול והקמה של קמפיינים שיווקיים ודיגיטליים משלב הרעיון ועד הביצוע בפועל וניתוח תוצאות לצורך אופטימיזציה.</p>
-        </div>
+</main>
 
-        <div class="role">
-            <h3>מנהלת תיקי לקוחות</h3>
-            <p>ניהול קשר שוטף עם לקוחות, ליווי מקצועי מקצה לקצה ותרגום צרכים לפתרונות שיווקיים וקריאייטיביים.</p>
-        </div>
+<a class="fab" id="fab" target="_blank" rel="noopener" href="https://wa.me/972526979535?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%AA%D7%99%D7%A7%20%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%95%D7%AA%20%D7%A9%D7%9C%D7%9A%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%95%D7%97%D7%97." aria-label="הודעה בוואטסאפ"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 1.800a8.200 8.200 0 1 1-4.200 15.300l-.300-.200-3 .800.800-2.900-.200-.300A8.200 8.200 0 0 1 12 3.800zM8.500 7.300c-.200 0-.500.100-.700.400-.300.300-1 1-1 2.300s1 2.700 1.200 2.900c.100.200 2 3.100 4.900 4.300 2.400 1 2.900.800 3.400.700.500 0 1.700-.700 1.900-1.300.200-.700.200-1.200.200-1.300-.100-.200-.300-.200-.600-.400l-1.900-.900c-.300-.100-.500-.200-.700.100l-.900 1.100c-.200.200-.300.200-.600.100-.300-.200-1.200-.500-2.300-1.400-.800-.800-1.400-1.700-1.600-2-.200-.300 0-.500.100-.600l.400-.500.300-.500v-.500l-.900-2.100c-.200-.500-.400-.400-.600-.400z"/></svg></a>
 
-    </section>
+<footer>
+  <img src="assets/logo.webp" alt="שלו עיצוב גרפי" width="400" height="469" loading="lazy">
+  © 2026 שלו דריקס
+</footer>
 
-    <section>
-        <h2>תיק עבודות</h2>
-        <div class="portfolio">
-            <img src="portfolio1.png">
-            <img src="portfolio2.png">
-            <img src="portfolio3.png">
-            <img src="portfolio4.png">
-            <img src="portfolio5.png">
-            <img src="portfolio6.png">
-            <img src="portfolio7.png">
-            <img src="portfolio8.png">
-            <img src="portfolio9.png">
-            <img src="portfolio10.png">
-            <img src="portfolio11.png">
-            <img src="portfolio12.png">
-            <img src="portfolio13.png">
-            <img src="portfolio14.png">
-            <img src="portfolio15.png">
-            <img src="portfolio16.png">
-            <img src="portfolio17.png">
-            <img src="portfolio18.png">
-            <img src="portfolio19.png">
-            <img src="portfolio20.png">
-        </div>
-    </section>
 
-    <footer>
-        © 2026 שלו דריקס | כל הזכויות שמורות
-    </footer>
 
-</div>
-
+<script>
+const slides=[...document.querySelectorAll('#stage .slide')],tabs=[...document.querySelectorAll('#tabs button')];let cur=0,timer;
+const show=i=>{cur=i;slides.forEach((s,k)=>s.classList.toggle('on',k===i));tabs.forEach((b,k)=>b.setAttribute('aria-pressed',k===i))};
+tabs.forEach((b,i)=>b.onclick=()=>{clearInterval(timer);show(i)});
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches)timer=setInterval(()=>show((cur+1)%slides.length),3800);
+const fab=document.getElementById('fab');
+if('IntersectionObserver' in window)new IntersectionObserver(es=>fab.classList.toggle('hide',es[0].isIntersecting),{threshold:.35}).observe(document.getElementById('contact'));
+document.getElementById("mode").onclick=()=>{const d=document.documentElement,n=d.dataset.theme==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}};
+const nav=document.getElementById('nav'),burger=document.getElementById('burger');
+const onScroll=()=>nav.classList.toggle('scrolled',scrollY>20);onScroll();addEventListener('scroll',onScroll,{passive:true});
+burger.onclick=()=>burger.setAttribute('aria-expanded',nav.classList.toggle('open'));
+document.querySelectorAll('#menu a').forEach(a=>a.onclick=()=>{nav.classList.remove('open');burger.setAttribute('aria-expanded',false)});
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+}else document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));
+</script>
 </body>
 </html>
